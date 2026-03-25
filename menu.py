@@ -7,7 +7,7 @@ import streamlit as st
 # ========== AI 模型配置 ==========
 from openai import OpenAI
 client = OpenAI(
-    api_key="33ee2693-79c8-478b-bc1b-ce48b97dc072",
+    api_key=st.secrets.get("ARK_API_KEY"),
     base_url="https://ark.cn-beijing.volces.com/api/v3"
 )
 
